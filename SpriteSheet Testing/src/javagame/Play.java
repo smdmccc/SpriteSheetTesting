@@ -5,15 +5,15 @@ import org.newdawn.slick.state.*;
 
 public class Play extends BasicGameState {
 	
-	private Animation a;
+/*
+ 	private Animation a;
 	
-	public Animation getAnimation (Image i, int spriteX, int spriteY, int spriteWidth,
-									int spriteHeight, int frames, int duration ){
+	public Animation getAnimation (Image i, int spriteX, int spriteY, int spriteWidth, int spriteHeight, int frames, int duration ){
 		
 		Animation a = new Animation(false);
 		
 		for(int y = 0 ; y < spriteY; y++) {
-			for(int x = 0 ; y < spriteX; x++) {
+			for(int x = 0 ; x < spriteX; x++) {
 
 			a.addFrame( i.getSubImage(x*spriteWidth, y*spriteHeight, spriteWidth, spriteHeight), duration);
 		
@@ -22,14 +22,14 @@ public class Play extends BasicGameState {
 		
 		return a;
 	}
-	
+*/	
 	public Play(int state) {
 		
 	}
 
 	public void init(GameContainer container, StateBasedGame sbg) throws SlickException {
-		Image i = new Image("res/sprites/walkingdown.png");
-		a = getAnimation(i, 4, 1, 16, 24, 4, 100);
+		Image walk = new Image("res/walking.png");
+		a = getAnimation(walk, 4, 1, 16, 24, 4, 100);
 		
 	}
 	
