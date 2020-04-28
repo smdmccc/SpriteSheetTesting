@@ -8,6 +8,8 @@ public class Game extends StateBasedGame {
 	public static final String gamename = "Tutorial Full";
 	public static final int menu = 0;
 	public static final int play = 1;
+	public static final int WIDTH = 0;
+	public static final int HEIGHT = 0;
 
 	public Game(String gamename) {
 		super(gamename);
@@ -34,7 +36,7 @@ public class Game extends StateBasedGame {
 			
 	}
 
-	@Override
+	
 	public void initStatesList(GameContainer container) throws SlickException {
 		// TODO Auto-generated method stub
 		
